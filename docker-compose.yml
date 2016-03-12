@@ -1,0 +1,4 @@
+web:
+  image: kangwa/angular2-seed
+  ports:
+    - "80:3000"
