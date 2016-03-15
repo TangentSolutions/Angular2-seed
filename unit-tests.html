@@ -6,9 +6,24 @@
   <script src="../node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
   <script src="../node_modules/jasmine-core/lib/jasmine-core/boot.js"></script>
 
-  <script src="./app/main.spec.js" ></script>
+  <!-- load the application's Hero definition -->
 
 </head>
 <body>
+  <!-- #1. add the system.js library -->
+  <script src="../node_modules/systemjs/dist/system.src.js"></script>
+  <script>
+    // #2. Configure SystemJS to use the .js extension
+    //     for imports from the app folder
+    System.config({
+      packages: {
+        'app': {defaultExtension: 'js'}
+      }
+    });
+    // #3. Import the spec file explicitly
+    System.import('app/hero.spec')
+      .then(window.onload)
+      .catch(console.error.bind(console));
+  </script>
 </body>
 </html>
