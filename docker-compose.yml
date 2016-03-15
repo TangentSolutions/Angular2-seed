@@ -1,4 +1,6 @@
 web:
-  image: kangwa/angular2-seed
+  build: .
+  volumes: 
+    - .:/var/www/app
   ports:
     - "80:3000"
