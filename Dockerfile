@@ -9,17 +9,17 @@ RUN mkdir -p /var/www/app
 WORKDIR /var/www/app
 
 # Put all our code inside that directory that lives in the container
-ADD package.json /var/www/app 
+ADD package.json /var/www/app
 
 # Install depenedencies
 RUN npm install
 
-ADD app /var/www/app/app
-ADD index.html /var/www/app
-ADD styles.css /var/www/app
+# ADD app /var/www/app/app
+# ADD index.html /var/www/app
+ADD . /var/www/app
 
-# Tell Docker we are going to use port 3000
-EXPOSE 3000
+# Tell Docker we are going to use port 8000
+EXPOSE 8000
 
 # The command to run our app when the container is run
 CMD ["npm", "start"]
