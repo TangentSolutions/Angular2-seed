@@ -1,2 +1,7 @@
 node_modules/
 bower_components/
+npm-debug.log
+src/app/*.js
+src/app/*.map
+src/main.js.map
+src/main.js
