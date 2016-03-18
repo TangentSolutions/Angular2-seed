@@ -5,7 +5,7 @@
     "start": "npm run lite",
     "lite": "lite-server"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "angular2": "2.0.0-beta.9",
     "es6-promise": "^3.0.2",
@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
-    "lite-server": "^2.1.0"
+    "lite-server": "^2.1.0",
+    "typescript": "^1.8.9"
   }
 }
