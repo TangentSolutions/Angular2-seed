@@ -1,4 +1,4 @@
-Angular 2 Seed Project
+# Angular 2 Seed Project
 
 A minimal starter project for Angular 2 applications with Bootstrap 3
 
